@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bundles in Clear Linux OS for Intel® Architecture</title>
+    <style type="text/css">
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+          <tr>
+              <th align=left>Bundle Name</th>
+              <th align=left>Description</th>
+          </tr>
+      </thead>
+      {% for record in data %}
+        <tbody>
+          <tr>
+            <td class="bundlename">{{record.data_title}}</td>
+            <td class="bundledesc">{{record.data_desc}}</td>
+          </tr>
+        </tbody>
+      {% endfor %}
+    </table>
+  </body>
+ </html>
